@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700')
+
+$blue: #4286f4
+$light-blue: #adc5ed
+$dark-blue: #0b2756
+$font: "Open Sans", sans-serif
+
+body
+	background-color: $light-blue
+	padding: 0
+	margin: 0
+
+.paragraph
+	text-align: center
+	font-family: $font
+
+h1
+	@extend .paragraph
+	line-height: 25px
+	color: $dark-blue
+
+h2
+	@extend .paragraph
+	letter-spacing: 3px
+	color: $blue
+
+.footer-paragraph
+	@extend .paragraph
+	color: #FFF
+
+.footer
+	background-color: $dark-blue
+	height: 50px
+	width: 100%
+	margin: 0
+	padding: 10px 0
+
+.header
+	a
+		padding: 5px
+		text-decoration: none
+		&:hover
+			color: yellow
+
+.content
+	img
+		display: block
+		border-radius: 50%
+		margin: 0 auto
+		padding: 10px
